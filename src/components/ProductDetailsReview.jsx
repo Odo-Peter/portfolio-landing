@@ -202,7 +202,7 @@ const ProductDetailsReview = () => {
           <div className="relative flex flex-col md:flex-row gap-y-4 items-center justify-between bg-gray-100 w-full py-6 px-4 md:px-8 rounded-md mt-4">
             <div className="shadow-lg flex justify-center items-center rounded w-full md:w-[45%]">
               <Carousel
-                // autoPlay={true}
+                autoPlay={true}
                 emulateTouch={true}
                 showStatus={false}
                 width={'100%'}
@@ -210,7 +210,7 @@ const ProductDetailsReview = () => {
                 showThumbs={false}
                 // dynamicHeight={'45%'}
                 interval={1800}
-                // infiniteLoop={true}
+                infiniteLoop={true}
               >
                 {resJson?.images.length >= 1 &&
                   resJson?.images.map((img) => (
