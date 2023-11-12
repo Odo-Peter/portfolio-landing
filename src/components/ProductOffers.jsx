@@ -14,7 +14,11 @@ const ProductOffers = () => {
         <p className="mb-6">
           For getting offers for a specific product, we will be fetching and
           scraping data from the{' '}
-          <Link className="text-purple-400 underline" to="https://amazon.com">
+          <Link
+            className="text-purple-400 underline"
+            to="https://amazon.com"
+            target="_blank"
+          >
             amazon
           </Link>{' '}
           ecommerce website. Getting the product detail is easier than you
@@ -28,6 +32,7 @@ const ProductOffers = () => {
               <Link
                 className="text-purple-400 underline"
                 to="https://amazon.com"
+                target="_blank"
               >
                 amazon
               </Link>{' '}
@@ -50,9 +55,9 @@ const ProductOffers = () => {
               parameter to our scraperAPI url. In our exampled case, the
               productID is <strong>"B0CB745VMN"</strong>.
             </p>
-            <p className="py-4 px-6 lg:px-16 bg-gray-300 rounded-md text-gray-700 font-mono overflow-auto">
+            <p className="py-4 text-sm px-6 lg:px-16 bg-gray-300 rounded-md text-gray-700 font-mono overflow-auto">
               {/* http://localhost:3001/v1/api/product/"productID" */}
-              http://localhost:3001/v1/api/product/B0CB745VMN/offers
+              https://scraper-backend-ez04.onrender.com/v1/api/product/B0CB745VMN/offers
             </p>
           </li>
 

@@ -6,7 +6,7 @@ import DemoPage from './pages/Demo';
 
 const App = () => {
   return (
-    <main className="bg-gray-200 overflow-x-hidden">
+    <main className="bg-gray-200 text-gray-900">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/docs" element={<Docs />} />

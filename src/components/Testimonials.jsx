@@ -6,7 +6,7 @@ const Testimonials = () => {
       <h2 className="text-3xl mb-8 font-extrabold text-center">Testimonals</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {testimonials.map((rev) => (
-          <div className="flex flex-col relative justify-center gap-x-4 border border-gray-300 py-8 px-4 shadow-xl rounded-lg hover:shadow-2xl transition">
+          <div key={rev.avatar} className="flex flex-col relative justify-center gap-x-4 border border-gray-300 py-8 px-4 shadow-xl rounded-lg hover:shadow-2xl transition">
             <div className="flex items-center">
               <img
                 alt={rev.name}

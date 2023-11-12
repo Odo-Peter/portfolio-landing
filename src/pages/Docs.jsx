@@ -15,7 +15,7 @@ const Docs = () => {
         className={openSideBar ? 'text-center p-4 blur-sm' : 'text-center p-4'}
       >
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
-          Get Started with get_
+          Getting started with get_
           <span className="text-blue-600 uppercase">scraped</span>
         </h1>
         <p className="flex items-center justify-center gap-x-2 text-[13px] md:text-sm lg:text-base text-gray-400 py-2">
@@ -29,7 +29,7 @@ const Docs = () => {
             </span>
             <em className="font-mono">
               This documentaion is centered around a user's development
-              environment, as this is an app to help developers pratice their
+              environment, as this is an app to help developers practice their
               ecommerce building skills with real time data. <br /> <br />
               To implement a production ready app, reach out to the creators via
               the social links at the bottom of the page, for a quick guide.

@@ -8,7 +8,7 @@ import hero from '../assets/hero.png';
 const LandingHero = () => {
   return (
     <div className="text-center font-bold py-20 space-y-4">
-      <div className="text-3xl md:text-5xl lg:text-6xl mb-4">
+      <div className="text-[1.6rem] md:text-5xl lg:text-6xl mb-4">
         <h1>Access Real Time Data for </h1>
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 mb-4">
           <TypewriterComponent
@@ -25,14 +25,14 @@ const LandingHero = () => {
             }}
           />
         </div>
-        <p className="text-sm md:text-base font-light text-gray-500 mb-4">
-          Access data from your favourite ecommerce stores easily
+        <p className="text-[0.8rem] md:text-base font-light text-gray-500 mb-4">
+          Get data from your favourite ecommerce stores..
         </p>
       </div>
       <div className="w-full flex items-center justify-center mb-8">
         <Link
           to="/docs"
-          className="flex items-center gap-4 py-4 px-20 text-center shadow-xl bg-blue-600 text-white text-sm font-semibold rounded-full hover:bg-blue-500 hover:shadow-2xl transition"
+          className="flex items-center gap-4 py-4 px-12 md:px-20 text-center shadow-xl bg-blue-600 text-white text-sm font-semibold rounded-full hover:bg-blue-500 hover:shadow-2xl transition"
         >
           Get Scraping For Free <ArrowRight className="w-4 h-4" />
         </Link>

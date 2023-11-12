@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import logo from '../assets/logo.png';
 import { docLinks } from '../constants/constants';
 
-import { X } from 'lucide-react';
+import { ArrowRight, X } from 'lucide-react';
 
 const MobileSideBar = ({ closeSideBar, setCloseSideBar }) => {
   return (
@@ -21,7 +21,10 @@ const MobileSideBar = ({ closeSideBar, setCloseSideBar }) => {
       </div>
       <div className="flex flex-col gap-y-6">
         {docLinks.map((doc) => (
-          <div key={doc.id} className="p-2 border-b border-zinc-600 text-base">
+          <div
+            key={doc.id}
+            className="p-3 border-b border-zinc-600 font-semibold text-sm"
+          >
             <ScrollLink
               to={doc.id}
               activeClass="active"
@@ -36,6 +39,12 @@ const MobileSideBar = ({ closeSideBar, setCloseSideBar }) => {
           </div>
         ))}
       </div>
+      <Link
+        to="/demo"
+        className="flex mt-24 mx-auto px-6 w-full items-center gap-4 py-3 justify-center shadow-xl bg-blue-600 text-white text-sm font-semibold rounded-full hover:bg-blue-500 hover:shadow-2xl transition"
+      >
+        Demo Review <ArrowRight className="w-4 h-4" />
+      </Link>
     </aside>
   );
 };

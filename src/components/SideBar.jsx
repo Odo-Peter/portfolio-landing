@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
+import { ArrowRight } from 'lucide-react';
+
 import logo from '../assets/logo.png';
 import { docLinks } from '../constants/constants';
 
@@ -13,11 +15,11 @@ const SideBar = () => {
           get_<span className="text-blue-600 uppercase">scraped</span>
         </Link>
       </div>
-      <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col gap-y-8">
         {docLinks.map((doc) => (
           <div
             key={doc.id}
-            className="p-2 border-b border-zinc-600 text-base transition"
+            className="p-3 border-b border-zinc-500 font-semibold text-base transition"
           >
             <ScrollLink
               to={doc.id}
@@ -32,6 +34,12 @@ const SideBar = () => {
           </div>
         ))}
       </div>
+      <Link
+        to="/demo"
+        className="flex mt-28 mx-auto px-6 w-full items-center gap-4 py-3 justify-center shadow-xl bg-blue-600 text-white text-sm font-semibold rounded-full hover:bg-blue-500 hover:shadow-2xl transition"
+      >
+        Demo Review <ArrowRight className="w-4 h-4" />
+      </Link>
     </aside>
   );
 };

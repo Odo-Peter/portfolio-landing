@@ -27,9 +27,9 @@ const ProductSearched = () => {
               search parameter to our scraperAPI url. In our exampled case, the
               product name is <strong>"Macbook Pro"</strong>.
             </p>
-            <p className="py-4 px-6 lg:px-16 bg-gray-300 rounded-md text-gray-700 font-mono overflow-auto">
+            <p className="py-4 text-sm px-6 lg:px-16 bg-gray-300 rounded-md text-gray-700 font-mono overflow-auto">
               {/* http://localhost:3001/v1/api/product/"productID" */}
-              http://localhost:3001/v1/api/search/macbookpro
+              https://scraper-backend-ez04.onrender.com/v1/api/search/macbook
             </p>
           </li>
 

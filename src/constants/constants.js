@@ -76,3 +76,66 @@ export const docLinks = [
     title: 'Get Searched Product',
   },
 ];
+
+export const detailsDemoFetch = `
+~~~javascript
+import axios from 'axios';
+
+const apiBaseUrl = 'https://scraper-backend-ez04.onrender.com/v1/api/';
+
+const fetchProductDetails = async (productID) => {
+  // productID from the amazon ecommerce store - B0CB745VMN
+  const response = await axios.get(\`\${apiBaseUrl}/product/\${productID}\`);
+
+  return response.data;
+}
+~~~
+`;
+
+export const reviewsDemoFetch = `
+~~~javascript
+import axios from 'axios';
+
+const apiBaseUrl = 'https://scraper-backend-ez04.onrender.com/v1/api/';
+
+const fetchProductDetails = async (productID) => {
+  // productID from the amazon ecommerce store - B0CB745VMN
+  const response = await axios.get(\`\${apiBaseUrl}/product/\${productID}/reviews\`);
+
+  return response.data;
+}
+~~~
+`;
+
+export const offerDemoFetch = `
+~~~javascript
+import axios from 'axios';
+
+const apiBaseUrl = 'https://scraper-backend-ez04.onrender.com/v1/api/';
+
+const fetchProductDetails = async (productID) => {
+  // productID from the amazon ecommerce store - B0CB745VMN
+  const response = await axios.get(\`\${apiBaseUrl}/product/\${productID}/offers\`);
+
+  return response.data;
+}
+~~~
+`;
+
+export const searchDemoFetch = `
+~~~javascript
+import axios from 'axios';
+
+const apiBaseUrl = 'https://scraper-backend-ez04.onrender.com/v1/api/';
+
+const fetchProductDetails = async (searchTerm) => {
+  // productID from the amazon ecommerce store - B0CB745VMN
+  const response = await axios.get(\`\${apiBaseUrl}/search/\${searchTerm}\`);
+
+  return response.data;
+}
+~~~
+`;
+
+export const BASE_SCRAPER_URL =
+  'https://scraper-backend-ez04.onrender.com/v1/api/';
